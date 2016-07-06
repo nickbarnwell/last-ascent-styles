@@ -2,7 +2,7 @@
   $horizontal-image: $vertical-image !default;
   $gradient: linear-gradient(to bottom,
                              rgba($la-medium-gray, 0),
-                             rgba($la-footer-gray, 10%) 120%) !default;
+                             rgba($la-footer-gray, 10) 120%) !default;
 
   @include background-image($gradient, $vertical-image);
 

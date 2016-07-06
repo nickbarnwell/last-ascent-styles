@@ -38,7 +38,12 @@
 
 span.dropcap {
   float: left;
-  font-size: 4 * $base-font-size;
-  line-height: 2 * $base-font-size;
-  padding: 14px 4px 0px 0px;
+  font-size: 3.5 * $base-font-size;
+  line-height: 1.8 * $base-font-size;
+  padding: 22px 4px 0px 0px;
+
+  @include media($tablet) {
+    padding-top: 26px;
+    font-size: 4 * $base-font-size;
+  }
 }
