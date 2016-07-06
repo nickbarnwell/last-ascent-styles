@@ -2,7 +2,7 @@
   $horizontal-image: $vertical-image !default;
   $gradient: linear-gradient(to bottom,
                              rgba($la-medium-gray, 0),
-                             rgba($dark-gray, 20) 100%) !default;
+                             rgba($la-footer-gray, 10%) 120%) !default;
 
   @include background-image($gradient, $vertical-image);
 
@@ -10,28 +10,24 @@
     @include background-image($gradient, $horizontal-image);
   }
 
-  background-position: 50% 50%, 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 50% 50%, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   margin: 0 auto;
   max-width: 100%;
 }
 
 %vertical-center-flex-container {
   @include display(flex);
-  @include align-items(center);
   @include flex-direction(row);
-  @include justify-content(center);
+  @include align-items(left);
+  @include justify-content(left);
+
 }
 
 %vertical-center-box {
   @include flex(1);
-  max-width: 95%;
-
-  @include media($tablet) {
-    width: 70%;
-    max-width: 540px;
-  }
+  
 }
 
 %cover-photo-text {
@@ -43,36 +39,49 @@
 
 /* Cover Photo Styles */
 .cover-photo {
-  .content {
-    @extend %vertical-center-flex-container;
+  @extend %vertical-center-flex-container;
 
+  .content {
+    @extend %vertical-center-box;
     @include padding(50px 0);
 
     @include media($tablet) {
       @include padding(100px 0);
     }
   }
-
-  .content-box {
-    @extend %vertical-center-box;
-    text-align: center;
-  }
 }
 
 .cover-photo-lede {
   @extend %cover-photo-text;
-  font-weight: 600;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0.6em;
+  max-width: 95%;
+
+  @include media($tablet) {
+    text-align: left;
+  }
 }
 
 .cover-photo-body {
   @extend %cover-photo-text;
+
   @include media($tablet) {
     font-size: 1.15em;
   }
 }
 
-.cover-photo-cta {
-  margin-top: 1.0em;
+a.cover-photo-cta {
+}
+
+button.cover-photo-cta {
   @include padding(1em 2.5em);
-  width: 80%;
+  display: block;
+  margin: 1.25em auto 0 auto;
+  width: 100%;
+
+  @include media($tablet) {
+    width: 60%;
+    margin: 1.2em 0 0 0;
+  }
 }
