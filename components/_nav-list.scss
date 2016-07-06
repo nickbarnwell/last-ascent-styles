@@ -29,7 +29,7 @@ $uncollapse-at: $desktop;
   list-style-type: none;
 
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   a { color: $la-medium-gray; }
 
   @include media($uncollapse-at) {
