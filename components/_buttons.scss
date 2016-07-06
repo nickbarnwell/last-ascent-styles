@@ -51,8 +51,8 @@ The base button for all forms and calls-to-action. Text is centred by default.
 
 :hover - The hover state
 :active - The depressed state
-.green - Button with a base colour of $tws-green
-.red - Button with a base of $tws-red
+.green - Button with a base colour of $la-green
+.red - Button with a base of $la-red
 .full-width - Stretches to fill width of parent element
 .wide - Adds 2.5em of L+R padding
 
@@ -62,14 +62,14 @@ button, input[type="submit"] {
 
   text-transform: uppercase;
   font-weight: 400;
-  a { color: $tws-white; }
+  a { color: $la-white; }
 
   &.green {
-    @include button-color($tws-green);
+    @include button-color($la-green);
   }
 
   &.red {
-    @include button-color($tws-red);
+    @include button-color($la-red);
   }
 
 

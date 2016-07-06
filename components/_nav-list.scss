@@ -30,7 +30,7 @@ $uncollapse-at: $desktop;
 
   text-transform: uppercase;
   font-weight: 700;
-  a { color: $tws-medium-gray; }
+  a { color: $la-medium-gray; }
 
   @include media($uncollapse-at) {
     float: left;
