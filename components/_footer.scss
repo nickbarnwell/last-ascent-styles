@@ -12,3 +12,12 @@ footer {
     float: none;
   }
 }
+
+.disclaimer {
+  color: rgba($la-white, 0.8);
+  margin: 0 auto;
+  font-size: 0.6em;
+  font-family: $proxima-nova;
+  font-weight: 300;
+  max-width: 600px;
+}
