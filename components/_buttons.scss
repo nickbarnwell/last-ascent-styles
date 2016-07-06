@@ -5,7 +5,7 @@ Any instances of a button that do not use <button> or <input type="submit">
 should @extend from this class.
 */
 %button {
-  font-family: $prenton;
+  font-family: $proxima-nova;
 
   -webkit-font-smoothing: antialiased;
   background-color: $base-button-color;

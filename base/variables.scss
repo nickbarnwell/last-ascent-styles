@@ -1,9 +1,9 @@
 // Font Families
 $proxima-nova: "proxima-nova", "Proxima Nova", "Helvetica Neue", sans-serif;
-$prenton: "prenton", "Helvetica Neue", sans-serif;
-$gibson:  "canada-type-gibson", sans-serif;
+$adobe-caslon: "adobe-caslon-pro", "Georgia", Georgia, serif;
+
 // Typography
-$base-font-family: "Georgia", Georgia, serif;
+$base-font-family: $adobe-caslon;
 $header-font-family: $proxima-nova;
 
 
