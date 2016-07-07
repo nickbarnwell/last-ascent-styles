@@ -1,14 +1,27 @@
 $border-gap: 0.1em;
 $tag-gap: 0.25em;
+$title-divider-padding: 0.15em;
+
+.post-title {
+  margin: 0.5em 0 0 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1;
+  border-bottom: 1px solid $medium-gray;
+  padding-bottom: $title-divider-padding;
+
+  a { color: $dark-gray; }
+}
 
 .post-info {
-  margin-bottom: $base-font-size;
-  font-family: $header-font-family;
-  font-weight: 300;
-
   @include display(flex);
   @include flex-direction(row);
   @include align-items(stretch);
+
+  padding-top: $title-divider-padding;
+  margin-bottom: $base-font-size;
+  font-family: $header-font-family;
+  font-weight: 300;
 }
 
 .post-tags {
@@ -39,14 +52,7 @@ $tag-gap: 0.25em;
 
 .post-date {
   @include flex(1);
-}
 
-.post-title {
-  margin: 0.5em 0 0 0;
-  text-transform: uppercase;
-  font-weight: 300;
-  line-height: 1;
-  border-bottom: 1px solid $medium-gray;
-
-  a { color: #333; }
+  font-size: 0.8 * $base-font-size;
+  color: $la-medium-gray;
 }
