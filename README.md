@@ -1,5 +1,5 @@
 # Introduction
 
-All of Tea With Stranger's styles. Annotated with [Knife Style
-Sheets](http://warpspire.com/kss/). View the styleguide at
-[making.teawithstrangers.com](//making.teawithstrangers.com)
+All of Last Ascent's styles.
+
+Stolen from the TWS CSStastrophe of 2016
